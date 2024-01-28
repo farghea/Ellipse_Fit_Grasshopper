@@ -27,7 +27,7 @@ The coefficients are optimized to minimize the L2 norm, similar to the plane fit
 
 The pseudo-inverse is computed iteratively using the Drazin inverse method. This method is particularly chosen for its iterative nature, and simplicity:
 
-\[ A_{i+1} = 2A_i - A_i*A*A_i \]
+\[ A_{i+1} = 2A_i - A_i A A_i \]
 
 where \( A_i \) represents the approximation of the pseudo-inverse in the i-th iteration, and \( A \) is the matrix for which we seek the pseudo-inverse. The recursion proceeds until the changes in \( A_i \) fall below a specified threshold, indicating that the pseudo-inverse has been sufficiently approximated.
 
