@@ -53,6 +53,8 @@ Go into the `rhino_GH_files/` directory to find the files:
 
 The `.gh` file has everything you need.
 
+![Alt text for fig1](figs/fig1.png)
+
 ### Want to Tinker with the Source Code?
 If you are in a place without numpy or scipy, check out the `src/` folder:
 - `geometry_operations.py`: The heart of the operation with all the custom geometric math.
