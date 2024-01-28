@@ -20,7 +20,7 @@ The process begins by fitting a plane to the provided set of 3D points through t
 Once the plane is fitted, the set of 3D points is projected onto this plane, transforming the problem into a 2D space. In the local 2D coordinate system, we search for the coefficients of the general ellipse equation:
 
 $$
-a*x^n \right = 0
+a*x^n = 0
 $$
 
 The coefficients are optimized to minimize the L2 norm, similar to the plane fitting procedure. This optimization is carried out through the computation of the pseudo-inverse of the design matrix formed by the projected points.
