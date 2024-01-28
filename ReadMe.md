@@ -33,7 +33,7 @@ $$
 A_{i+1} = 2A_i - A_i.A.A_i
 $$
 
-where $$ A_i $$ represents the approximation of the pseudo-inverse in the i-th iteration, and $$ A $$ is the matrix for which we seek the pseudo-inverse. The recursion proceeds until the changes in $$ A_i $$ fall below a specified threshold, indicating that the pseudo-inverse has been sufficiently approximated.
+where $A_i$ represents the approximation of the pseudo-inverse in the i-th iteration, and $$ A $$ is the matrix for which we seek the pseudo-inverse. The recursion proceeds until the changes in $$ A_i $$ fall below a specified threshold, indicating that the pseudo-inverse has been sufficiently approximated.
 
 ### Implementation
 
