@@ -19,7 +19,9 @@ The process begins by fitting a plane to the provided set of 3D points through t
 
 Once the plane is fitted, the set of 3D points is projected onto this plane, transforming the problem into a 2D space. In the local 2D coordinate system, we search for the coefficients of the general ellipse equation:
 
-\[ ax^2 + by^2 + cxy + dx + ey + g = 0 \]
+$$
+a x^2 + b xy + c y^2 + d x + e y + g = 0
+$$
 
 The coefficients are optimized to minimize the L2 norm, similar to the plane fitting procedure. This optimization is carried out through the computation of the pseudo-inverse of the design matrix formed by the projected points.
 
@@ -27,9 +29,11 @@ The coefficients are optimized to minimize the L2 norm, similar to the plane fit
 
 The pseudo-inverse is computed iteratively using the Drazin inverse method. This method is particularly chosen for its iterative nature, and simplicity:
 
-\[ A_{i+1} = 2A_i - A_iAA_i \]
+$$
+A_{i+1} = 2A_i - A_i.A.A_i
+$$
 
-where \( A_i \) represents the approximation of the pseudo-inverse in the i-th iteration, and \( A \) is the matrix for which we seek the pseudo-inverse. The recursion proceeds until the changes in \( A_i \) fall below a specified threshold, indicating that the pseudo-inverse has been sufficiently approximated.
+where $A_i$ represents the approximation of the pseudo-inverse in the i-th iteration, and $A$ is the matrix for which we seek the pseudo-inverse. The recursion proceeds until the changes in $A_i$ fall below a specified threshold, indicating that the pseudo-inverse has been sufficiently approximated.
 
 ### Implementation
 
