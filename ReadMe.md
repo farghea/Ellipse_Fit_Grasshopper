@@ -60,3 +60,6 @@ If you are in a place without numpy or scipy, check out the `src/` folder:
 - `geometry_operations.py`: The heart of the operation with all the custom geometric math.
 
 To see it in action, run `main_example.py`.
+
+![Alt text for fig1](figs/fig2.png)
+
